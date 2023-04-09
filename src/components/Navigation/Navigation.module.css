@@ -3,12 +3,12 @@
     background-color: cadetblue;
 }
 
-.nav a {
-    color: white;
+.item a:hover {
+    color: aquamarine;
     text-decoration: none;
 }
 
-.nav a:hover {
-    color: aquamarine;
+.item a {
+    color: white;
     text-decoration: none;
 }

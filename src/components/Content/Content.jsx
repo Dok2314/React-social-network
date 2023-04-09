@@ -17,10 +17,10 @@ const Content = () => {
                     New post
                 </div>
                 <div>
-                    <div>Post 1</div>
-                    <div>Post 2</div>
-                    <div>Post 3</div>
-                    <div>Post 4</div>
+                    <div className={contentCss.item}>Post 1</div>
+                    <div className={contentCss.item}>Post 2</div>
+                    <div className={contentCss.item}>Post 3</div>
+                    <div className={contentCss.item}>Post 4</div>
                 </div>
             </div>
         </div>
