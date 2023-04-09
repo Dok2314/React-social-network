@@ -1,6 +1,8 @@
+import navCss from "./Navigation.module.css";
+
 const Nav = () => {
     return (
-        <nav className='nav'>
+        <nav className={navCss.nav}>
             <div>
                 <a href="">Profile</a>
             </div>
