@@ -1,0 +1,14 @@
+.nav {
+    grid-area: nav;
+    background-color: cadetblue;
+}
+
+.item a:hover {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+}

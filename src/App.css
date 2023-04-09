@@ -16,37 +16,3 @@ body{
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px;
 }
-
-.header {
-  grid-area: header;
-  background-color: cadetblue;
-}
-
-.header img {
-  width: 60px;
-  height: 60px;
-}
-
-.nav {
-  grid-area: nav;
-  background-color: cadetblue;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.nav a:hover {
-  color: aquamarine;
-  text-decoration: none;
-}
-
-.content {
-  grid-area: content;
-  background-color: slategrey;
-}
-
-.content img {
-  width: 100%;
-}
