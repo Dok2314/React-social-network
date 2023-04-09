@@ -1,7 +1,8 @@
 import './App.css';
 import Header from "./components/Header/Header";
 import Nav from "./components/Navigation/Nav";
-import Content from "./components/Content/Content";
+import Profile from "./components/Profile/Profile";
+import Dialogs from "./components/Dialogs/Dialogs";
 
 const App = () => {
   return (
@@ -10,7 +11,10 @@ const App = () => {
 
         <Nav />
 
-        <Content />
+        <div className={'app-wrapper-content'}>
+            <Profile />
+            {/*<Dialogs />*/}
+        </div>
     </div>
   );
 };
