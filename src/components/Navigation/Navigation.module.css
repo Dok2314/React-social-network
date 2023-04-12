@@ -1,14 +1,23 @@
 .nav {
+    padding: 10px;
     grid-area: nav;
     background-color: cadetblue;
 }
 
-.item a:hover {
+a.item:hover {
+    padding: 10px;
     color: aquamarine;
     text-decoration: none;
 }
 
-.item a {
+a.item {
+    padding: 10px;
     color: white;
+    text-decoration: none;
+}
+
+a.active {
+    padding: 10px;
+    color: aquamarine;
     text-decoration: none;
 }
