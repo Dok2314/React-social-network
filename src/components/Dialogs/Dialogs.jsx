@@ -1,31 +1,40 @@
 import dialogsCss from "./Dialogs.module.css";
+import {NavLink} from "react-router-dom";
+
+const DialogItem = (props) => {
+    return (
+        <div className={`${dialogsCss.dialog} ${dialogsCss.active}`}>
+            <NavLink to={`/dialogs/${props.id}`}>{props.name}</NavLink>
+        </div>
+    );
+};
+
+const Message = (props) => {
+    return (
+        <div className={dialogsCss.message}>
+            {props.message}
+        </div>
+    );
+};
 
 const Dialogs = (props) => {
     return (
         <div className={dialogsCss.dialogs}>
             <div className={dialogsCss.dialogsItems}>
-                <div className={`${dialogsCss.dialog} ${dialogsCss.active}`}>
-                    Daniil
-                </div>
-                <div className={dialogsCss.dialog}>
-                    Sabina
-                </div>
-                <div className={dialogsCss.dialog}>
-                    Oleg
-                </div>
-                <div className={dialogsCss.dialog}>
-                    Sveta
-                </div>
-                <div className={dialogsCss.dialog}>
-                    Nika
-                </div>
+                <DialogItem id={1} name={'Daniil'} />
+                <DialogItem id={2} name={'Sabina'} />
+                <DialogItem id={3} name={'Oleg'} />
+                <DialogItem id={4} name={'Nika'} />
+                <DialogItem id={5} name={'Vitya'} />
+                <DialogItem id={6} name={'Nika'} />
+                <DialogItem id={7} name={'Kostya'} />
             </div>
 
             <div className={dialogsCss.messages}>
-                <div className={dialogsCss.message}>Hi</div>
-                <div className={dialogsCss.message}>How is your dok?</div>
-                <div className={dialogsCss.message}>Hello dude!</div>
-                <div className={dialogsCss.message}>My name John!</div>
+                <Message message={'Hi'} />
+                <Message message={'How is your DOK?'} />
+                <Message message={'Hello dude!'} />
+                <Message message={'My name John!'} />
             </div>
         </div>
     );

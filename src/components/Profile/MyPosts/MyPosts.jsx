@@ -1,17 +1,19 @@
 import Post from "./Post/Post";
+import myPostsCss from "./MyPosts.module.css";
 
 const MyPosts = () => {
     return (
-        <div>
-            My Posts
+        <div className={myPostsCss.postsBlock}>
+            <h3>My Posts</h3>
             <div>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
                 <div>
                     <button>Add post</button>
-                    <button>Remove post</button>
                 </div>
             </div>
-            <div>
+            <div className={myPostsCss.posts}>
                 <Post text='First post from Daniil!' likesCount={25} />
                 <Post text='My post!' likesCount={12} />
                 <Post text='Where are you from?' likesCount={45} />
