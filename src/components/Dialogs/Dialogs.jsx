@@ -3,11 +3,8 @@ import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 
 const Dialogs = (props) => {
-    const dialogs = props.dialogs;
-    const messages = props.messages;
-
-    const dialogsElements = dialogs.map((d) => <DialogItem key={d.id} id={d.id} name={d.name} />);
-    const messagesElements = messages.map((m) => <Message key={m.id} message={m.message} />);
+    const dialogsElements = props.state.dialogs.map((d) => <DialogItem key={d.id} id={d.id} name={d.name} />);
+    const messagesElements = props.state.messages.map((m) => <Message key={m.id} message={m.message} />);
 
     return (
         <div className={dialogsCss.dialogs}>
