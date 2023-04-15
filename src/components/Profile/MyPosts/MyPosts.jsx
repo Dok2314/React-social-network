@@ -2,9 +2,7 @@ import Post from "./Post/Post";
 import myPostsCss from "./MyPosts.module.css";
 
 const MyPosts = (props) => {
-    const posts = props.posts;
-
-    const postsElements = posts.map((p) => <Post key={p.id} text={p.text} likesCount={p.likesCount} />);
+    const postsElements = props.posts.map((p) => <Post key={p.id} text={p.text} likesCount={p.likesCount} />);
 
     return (
         <div className={myPostsCss.postsBlock}>
