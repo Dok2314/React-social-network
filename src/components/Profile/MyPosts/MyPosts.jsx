@@ -5,11 +5,12 @@ import myPostsCss from "./MyPosts.module.css";
 const MyPosts = (props) => {
     const postsElements = props.posts.map((p) => <Post key={p.id} text={p.text} likesCount={p.likesCount} />);
 
-    const newPostElement = React.createRef()
+    const newPostElement = React.createRef();
 
     const addPost = () => {
         let text = newPostElement.current.value;
         props.addPost(text);
+        newPostElement.current.value = '';
     };
 
     return (
