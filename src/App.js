@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Nav from "./components/Navigation/Nav";
 import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
+import {updatePostText} from "./redux/state";
 
 const App = (props) => {
   return (
@@ -27,8 +28,9 @@ const App = (props) => {
                             path='/profile'
                                element={
                                    <Profile
-                                       state={props.state.profilePage}
+                                       profilePage={props.state.profilePage}
                                        addPost={props.addPost}
+                                       updatePostText={props.updatePostText}
                                    />
                                }
                         />
