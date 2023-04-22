@@ -4,7 +4,6 @@ import Header from "./components/Header/Header";
 import Nav from "./components/Navigation/Nav";
 import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
-import {updatePostText} from "./redux/state";
 
 const App = (props) => {
   return (
