@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Nav from "./components/Navigation/Nav";
 import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
+import DialogsContainer from "./components/Dialogs/DialogsContainer";
 
 const App = (props) => {
   return (
@@ -18,7 +19,7 @@ const App = (props) => {
                         <Route
                             path='/dialogs/*'
                                element={
-                                   <Dialogs store={props.store} />
+                                   <DialogsContainer store={props.store} />
                                }
                         />
                         <Route
