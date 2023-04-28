@@ -2,7 +2,7 @@ import Dialogs from "./Dialogs";
 import {addMessageActionCreator, updateMessageBodyActionCreator} from "../../redux/dialogs-reducer";
 
 const DialogsContainer = (props) => {
-    let state = props.store.getState();
+    const state = props.store.getState();
 
     const onSendMessageClick = () => {
         props.store.dispatch(addMessageActionCreator());
